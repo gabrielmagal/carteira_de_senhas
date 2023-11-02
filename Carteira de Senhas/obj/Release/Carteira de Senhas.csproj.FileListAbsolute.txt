@@ -1,0 +1,14 @@
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\bin\Release\Carteira de Senhas.exe.config
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\bin\Release\Carteira de Senhas.exe
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\bin\Release\Carteira de Senhas.pdb
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\bin\Release\ReaLTaiizor.dll
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\bin\Release\ReaLTaiizor.xml
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\obj\Release\Carteira de Senhas.csproj.AssemblyReference.cache
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\obj\Release\Carteira de Senhas.csproj.SuggestedBindingRedirects.cache
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\obj\Release\Carteira_de_Senhas.Form1.resources
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\obj\Release\Carteira_de_Senhas.Properties.Resources.resources
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\obj\Release\Carteira de Senhas.csproj.GenerateResource.cache
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\obj\Release\Carteira de Senhas.csproj.CoreCompileInputs.cache
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\obj\Release\Carteira de Senhas.csproj.CopyComplete
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\obj\Release\Carteira de Senhas.exe
+C:\Users\Fr33d\source\repos\Carteira de Senhas\Carteira de Senhas\obj\Release\Carteira de Senhas.pdb
