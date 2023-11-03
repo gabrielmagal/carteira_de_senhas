@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.themeForm1 = new ReaLTaiizor.Forms.ThemeForm();
+            this.btn_close = new ReaLTaiizor.Controls.LostButton();
+            this.parrotGroupBox4 = new ReaLTaiizor.Controls.ParrotGroupBox();
+            this.txb_encrypt_decrypt = new ReaLTaiizor.Controls.CrownTextBox();
+            this.btn_encrypt_decrypt = new ReaLTaiizor.Controls.LostButton();
             this.txb_log = new ReaLTaiizor.Controls.ForeverTextBox();
             this.parrotGroupBox3 = new ReaLTaiizor.Controls.ParrotGroupBox();
             this.txb_remove = new ReaLTaiizor.Controls.CrownTextBox();
@@ -51,15 +55,11 @@
             this.crownLabel3 = new ReaLTaiizor.Controls.CrownLabel();
             this.crownLabel2 = new ReaLTaiizor.Controls.CrownLabel();
             this.crownLabel1 = new ReaLTaiizor.Controls.CrownLabel();
-            this.parrotGroupBox4 = new ReaLTaiizor.Controls.ParrotGroupBox();
-            this.txb_encrypt_decrypt = new ReaLTaiizor.Controls.CrownTextBox();
-            this.btn_encrypt_decrypt = new ReaLTaiizor.Controls.LostButton();
-            this.btn_close = new ReaLTaiizor.Controls.LostButton();
             this.themeForm1.SuspendLayout();
+            this.parrotGroupBox4.SuspendLayout();
             this.parrotGroupBox3.SuspendLayout();
             this.parrotGroupBox2.SuspendLayout();
             this.parrotGroupBox1.SuspendLayout();
-            this.parrotGroupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // themeForm1
@@ -85,6 +85,63 @@
             this.themeForm1.TabIndex = 0;
             this.themeForm1.Text = "Carteira de Senhas";
             // 
+            // btn_close
+            // 
+            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_close.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_close.ForeColor = System.Drawing.Color.White;
+            this.btn_close.HoverColor = System.Drawing.Color.DodgerBlue;
+            this.btn_close.Image = null;
+            this.btn_close.Location = new System.Drawing.Point(701, 12);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(36, 27);
+            this.btn_close.TabIndex = 5;
+            this.btn_close.Text = "X";
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            // 
+            // parrotGroupBox4
+            // 
+            this.parrotGroupBox4.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.parrotGroupBox4.BorderWidth = 1;
+            this.parrotGroupBox4.Controls.Add(this.txb_encrypt_decrypt);
+            this.parrotGroupBox4.Controls.Add(this.btn_encrypt_decrypt);
+            this.parrotGroupBox4.Location = new System.Drawing.Point(9, 70);
+            this.parrotGroupBox4.Name = "parrotGroupBox4";
+            this.parrotGroupBox4.ShowText = true;
+            this.parrotGroupBox4.Size = new System.Drawing.Size(339, 54);
+            this.parrotGroupBox4.TabIndex = 0;
+            this.parrotGroupBox4.TabStop = false;
+            this.parrotGroupBox4.Text = "Encrypt/Decrypt";
+            this.parrotGroupBox4.TextColor = System.Drawing.Color.DodgerBlue;
+            // 
+            // txb_encrypt_decrypt
+            // 
+            this.txb_encrypt_decrypt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
+            this.txb_encrypt_decrypt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.txb_encrypt_decrypt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
+            this.txb_encrypt_decrypt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txb_encrypt_decrypt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
+            this.txb_encrypt_decrypt.Location = new System.Drawing.Point(7, 22);
+            this.txb_encrypt_decrypt.Name = "txb_encrypt_decrypt";
+            this.txb_encrypt_decrypt.Size = new System.Drawing.Size(246, 21);
+            this.txb_encrypt_decrypt.TabIndex = 1;
+            // 
+            // btn_encrypt_decrypt
+            // 
+            this.btn_encrypt_decrypt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
+            this.btn_encrypt_decrypt.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_encrypt_decrypt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_encrypt_decrypt.ForeColor = System.Drawing.Color.White;
+            this.btn_encrypt_decrypt.HoverColor = System.Drawing.Color.DodgerBlue;
+            this.btn_encrypt_decrypt.Image = null;
+            this.btn_encrypt_decrypt.Location = new System.Drawing.Point(257, 17);
+            this.btn_encrypt_decrypt.Name = "btn_encrypt_decrypt";
+            this.btn_encrypt_decrypt.Size = new System.Drawing.Size(71, 30);
+            this.btn_encrypt_decrypt.TabIndex = 1;
+            this.btn_encrypt_decrypt.Text = "Inserir";
+            this.btn_encrypt_decrypt.Click += new System.EventHandler(this.btn_encrypt_decrypt_Click);
+            // 
             // txb_log
             // 
             this.txb_log.BackColor = System.Drawing.Color.Transparent;
@@ -96,9 +153,9 @@
             this.txb_log.MaxLength = 32767;
             this.txb_log.Multiline = true;
             this.txb_log.Name = "txb_log";
-            this.txb_log.ReadOnly = false;
+            this.txb_log.ReadOnly = true;
             this.txb_log.Size = new System.Drawing.Size(383, 356);
-            this.txb_log.TabIndex = 10;
+            this.txb_log.TabIndex = 4;
             this.txb_log.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txb_log.UseSystemPasswordChar = false;
             // 
@@ -112,7 +169,7 @@
             this.parrotGroupBox3.Name = "parrotGroupBox3";
             this.parrotGroupBox3.ShowText = true;
             this.parrotGroupBox3.Size = new System.Drawing.Size(339, 54);
-            this.parrotGroupBox3.TabIndex = 10;
+            this.parrotGroupBox3.TabIndex = 3;
             this.parrotGroupBox3.TabStop = false;
             this.parrotGroupBox3.Text = "Remover";
             this.parrotGroupBox3.TextColor = System.Drawing.Color.DodgerBlue;
@@ -127,7 +184,7 @@
             this.txb_remove.Location = new System.Drawing.Point(7, 22);
             this.txb_remove.Name = "txb_remove";
             this.txb_remove.Size = new System.Drawing.Size(246, 21);
-            this.txb_remove.TabIndex = 15;
+            this.txb_remove.TabIndex = 0;
             // 
             // btn_remove
             // 
@@ -159,7 +216,7 @@
             this.parrotGroupBox2.Name = "parrotGroupBox2";
             this.parrotGroupBox2.ShowText = true;
             this.parrotGroupBox2.Size = new System.Drawing.Size(339, 106);
-            this.parrotGroupBox2.TabIndex = 9;
+            this.parrotGroupBox2.TabIndex = 2;
             this.parrotGroupBox2.TabStop = false;
             this.parrotGroupBox2.Text = "Buscar";
             this.parrotGroupBox2.TextColor = System.Drawing.Color.DodgerBlue;
@@ -172,7 +229,7 @@
             this.txb_search_password.Location = new System.Drawing.Point(89, 71);
             this.txb_search_password.Name = "txb_search_password";
             this.txb_search_password.Size = new System.Drawing.Size(233, 21);
-            this.txb_search_password.TabIndex = 13;
+            this.txb_search_password.TabIndex = 3;
             // 
             // txb_search_login
             // 
@@ -182,7 +239,7 @@
             this.txb_search_login.Location = new System.Drawing.Point(89, 46);
             this.txb_search_login.Name = "txb_search_login";
             this.txb_search_login.Size = new System.Drawing.Size(233, 21);
-            this.txb_search_login.TabIndex = 12;
+            this.txb_search_login.TabIndex = 2;
             // 
             // txb_search_app
             // 
@@ -194,7 +251,7 @@
             this.txb_search_app.Location = new System.Drawing.Point(89, 21);
             this.txb_search_app.Name = "txb_search_app";
             this.txb_search_app.Size = new System.Drawing.Size(156, 21);
-            this.txb_search_app.TabIndex = 11;
+            this.txb_search_app.TabIndex = 0;
             // 
             // crownLabel4
             // 
@@ -260,7 +317,7 @@
             this.parrotGroupBox1.Name = "parrotGroupBox1";
             this.parrotGroupBox1.ShowText = true;
             this.parrotGroupBox1.Size = new System.Drawing.Size(339, 140);
-            this.parrotGroupBox1.TabIndex = 0;
+            this.parrotGroupBox1.TabIndex = 1;
             this.parrotGroupBox1.TabStop = false;
             this.parrotGroupBox1.Text = "Salvar";
             this.parrotGroupBox1.TextColor = System.Drawing.Color.DodgerBlue;
@@ -273,7 +330,7 @@
             this.txb_save_password.Location = new System.Drawing.Point(89, 73);
             this.txb_save_password.Name = "txb_save_password";
             this.txb_save_password.Size = new System.Drawing.Size(178, 21);
-            this.txb_save_password.TabIndex = 14;
+            this.txb_save_password.TabIndex = 2;
             // 
             // txb_save_login
             // 
@@ -283,7 +340,7 @@
             this.txb_save_login.Location = new System.Drawing.Point(89, 49);
             this.txb_save_login.Name = "txb_save_login";
             this.txb_save_login.Size = new System.Drawing.Size(233, 21);
-            this.txb_save_login.TabIndex = 15;
+            this.txb_save_login.TabIndex = 1;
             // 
             // txb_save_app
             // 
@@ -293,7 +350,7 @@
             this.txb_save_app.Location = new System.Drawing.Point(89, 25);
             this.txb_save_app.Name = "txb_save_app";
             this.txb_save_app.Size = new System.Drawing.Size(233, 21);
-            this.txb_save_app.TabIndex = 14;
+            this.txb_save_app.TabIndex = 0;
             // 
             // btn_save_generate_password
             // 
@@ -306,7 +363,7 @@
             this.btn_save_generate_password.Location = new System.Drawing.Point(273, 73);
             this.btn_save_generate_password.Name = "btn_save_generate_password";
             this.btn_save_generate_password.Size = new System.Drawing.Size(52, 24);
-            this.btn_save_generate_password.TabIndex = 8;
+            this.btn_save_generate_password.TabIndex = 3;
             this.btn_save_generate_password.Text = "Gerar";
             this.btn_save_generate_password.Click += new System.EventHandler(this.btn_save_generate_password_Click);
             // 
@@ -321,7 +378,7 @@
             this.btn_save.Location = new System.Drawing.Point(107, 102);
             this.btn_save.Name = "btn_save";
             this.btn_save.Size = new System.Drawing.Size(124, 30);
-            this.btn_save.TabIndex = 1;
+            this.btn_save.TabIndex = 4;
             this.btn_save.Text = "Salvar";
             this.btn_save.Click += new System.EventHandler(this.btn_save_Click);
             // 
@@ -358,63 +415,6 @@
             this.crownLabel1.TabIndex = 3;
             this.crownLabel1.Text = "Aplicativo:";
             // 
-            // parrotGroupBox4
-            // 
-            this.parrotGroupBox4.BorderColor = System.Drawing.Color.DodgerBlue;
-            this.parrotGroupBox4.BorderWidth = 1;
-            this.parrotGroupBox4.Controls.Add(this.txb_encrypt_decrypt);
-            this.parrotGroupBox4.Controls.Add(this.btn_encrypt_decrypt);
-            this.parrotGroupBox4.Location = new System.Drawing.Point(9, 70);
-            this.parrotGroupBox4.Name = "parrotGroupBox4";
-            this.parrotGroupBox4.ShowText = true;
-            this.parrotGroupBox4.Size = new System.Drawing.Size(339, 54);
-            this.parrotGroupBox4.TabIndex = 17;
-            this.parrotGroupBox4.TabStop = false;
-            this.parrotGroupBox4.Text = "Encrypt/Decrypt";
-            this.parrotGroupBox4.TextColor = System.Drawing.Color.DodgerBlue;
-            // 
-            // txb_encrypt_decrypt
-            // 
-            this.txb_encrypt_decrypt.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
-            this.txb_encrypt_decrypt.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txb_encrypt_decrypt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(69)))), ((int)(((byte)(73)))), ((int)(((byte)(74)))));
-            this.txb_encrypt_decrypt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txb_encrypt_decrypt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(220)))), ((int)(((byte)(220)))));
-            this.txb_encrypt_decrypt.Location = new System.Drawing.Point(7, 22);
-            this.txb_encrypt_decrypt.Name = "txb_encrypt_decrypt";
-            this.txb_encrypt_decrypt.Size = new System.Drawing.Size(246, 21);
-            this.txb_encrypt_decrypt.TabIndex = 15;
-            // 
-            // btn_encrypt_decrypt
-            // 
-            this.btn_encrypt_decrypt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btn_encrypt_decrypt.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_encrypt_decrypt.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_encrypt_decrypt.ForeColor = System.Drawing.Color.White;
-            this.btn_encrypt_decrypt.HoverColor = System.Drawing.Color.DodgerBlue;
-            this.btn_encrypt_decrypt.Image = null;
-            this.btn_encrypt_decrypt.Location = new System.Drawing.Point(257, 17);
-            this.btn_encrypt_decrypt.Name = "btn_encrypt_decrypt";
-            this.btn_encrypt_decrypt.Size = new System.Drawing.Size(71, 30);
-            this.btn_encrypt_decrypt.TabIndex = 1;
-            this.btn_encrypt_decrypt.Text = "Inserir";
-            this.btn_encrypt_decrypt.Click += new System.EventHandler(this.btn_encrypt_decrypt_Click);
-            // 
-            // btn_close
-            // 
-            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(48)))));
-            this.btn_close.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btn_close.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_close.ForeColor = System.Drawing.Color.White;
-            this.btn_close.HoverColor = System.Drawing.Color.DodgerBlue;
-            this.btn_close.Image = null;
-            this.btn_close.Location = new System.Drawing.Point(701, 12);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(36, 27);
-            this.btn_close.TabIndex = 17;
-            this.btn_close.Text = "X";
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -433,14 +433,14 @@
             this.TransparencyKey = System.Drawing.Color.Fuchsia;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.themeForm1.ResumeLayout(false);
+            this.parrotGroupBox4.ResumeLayout(false);
+            this.parrotGroupBox4.PerformLayout();
             this.parrotGroupBox3.ResumeLayout(false);
             this.parrotGroupBox3.PerformLayout();
             this.parrotGroupBox2.ResumeLayout(false);
             this.parrotGroupBox2.PerformLayout();
             this.parrotGroupBox1.ResumeLayout(false);
             this.parrotGroupBox1.PerformLayout();
-            this.parrotGroupBox4.ResumeLayout(false);
-            this.parrotGroupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }

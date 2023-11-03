@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -23,11 +24,23 @@ namespace Carteira_de_Senhas
         public Form1()
         {
             InitializeComponent();
+            log("Bem vindo(a) - " + Environment.MachineName);
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
             preencherSecoes();
+            string[] allSectionsName = iniFile.ReadAllSectionsName();
+
+            if (!File.Exists(iniFile.Path))
+                return;
+
+            log("Carregando lista de aplicativos salvos. " + allSectionsName.Length);
+            foreach (string name in allSectionsName)
+            {
+                log("       " + name);
+            }
+            log("Lista preenchida com sucesso!");
         }
 
         private void btn_save_generate_password_Click(object sender, EventArgs e)
@@ -109,10 +122,17 @@ namespace Carteira_de_Senhas
 
             if (!String.IsNullOrEmpty(login) && !String.IsNullOrEmpty(senha))
             {
-                txb_search_login.Text = login;
-                txb_search_password.Text = encrypt.strDecrypt(senha, strEncryptDecrypt);
-                log(strSucess);
-                ReaLTaiizor.Controls.CrownMessageBox.ShowInformation(strSucess, "Info");
+                try
+                {
+                    txb_search_password.Text = encrypt.strDecrypt(senha, strEncryptDecrypt);
+                    txb_search_login.Text = login;
+                    log(strSucess);
+                    ReaLTaiizor.Controls.CrownMessageBox.ShowInformation(strSucess, "Info");
+                }
+                catch (CryptographicException ex)
+                {
+                    ReaLTaiizor.Controls.CrownMessageBox.ShowError("A chave inserida para descriptografar está incorreta!", "Info");
+                }
             }
             else
             {
