@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33829.357
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carteira de Senhas", "Carteira de Senhas\Carteira de Senhas.csproj", "{E43AB3E4-B26B-4DC2-8FB7-19A52A43F04B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Carteira de Senhas Core", "Carteira de Senhas Core\Carteira de Senhas Core.csproj", "{EF1AE830-04E9-4A1F-8F2D-E4B2DB63DEE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E43AB3E4-B26B-4DC2-8FB7-19A52A43F04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E43AB3E4-B26B-4DC2-8FB7-19A52A43F04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E43AB3E4-B26B-4DC2-8FB7-19A52A43F04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E43AB3E4-B26B-4DC2-8FB7-19A52A43F04B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF1AE830-04E9-4A1F-8F2D-E4B2DB63DEE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF1AE830-04E9-4A1F-8F2D-E4B2DB63DEE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF1AE830-04E9-4A1F-8F2D-E4B2DB63DEE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF1AE830-04E9-4A1F-8F2D-E4B2DB63DEE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
