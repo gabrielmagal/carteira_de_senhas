@@ -101,10 +101,6 @@
             txb_log.CustomButton.Visible = false;
             txb_log.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
             txb_log.ForeColor = SystemColors.ButtonHighlight;
-            txb_log.Lines = new string[]
-    {
-    "poisonTextBox1"
-    };
             txb_log.Location = new Point(359, 73);
             txb_log.MaxLength = 32767;
             txb_log.Multiline = true;
@@ -118,7 +114,6 @@
             txb_log.Size = new Size(378, 371);
             txb_log.Style = ReaLTaiizor.Enum.Poison.ColorStyle.Blue;
             txb_log.TabIndex = 12;
-            txb_log.Text = "poisonTextBox1";
             txb_log.Theme = ReaLTaiizor.Enum.Poison.ThemeStyle.Light;
             txb_log.UseCustomBackColor = true;
             txb_log.UseCustomFont = true;
